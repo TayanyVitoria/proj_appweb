@@ -1,3 +1,6 @@
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Gestor+De+Finanças;Second+line+of+text)](https://git.io/typing-svg)
+
 🧾 Planify – Plataforma de Gestão Financeira
 Planify é uma plataforma web desenvolvida como Trabalho de Conclusão de Curso (TCC) no curso técnico em Desenvolvimento de Sistemas, com o objetivo de oferecer uma solução prática, intuitiva e acessível para a organização financeira pessoal e empresarial.
 
