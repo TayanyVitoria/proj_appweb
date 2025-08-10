@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login e Cadastro</title>
-  <link rel="stylesheet" href="/proj_appweb/css/login.css"/>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/proj_appweb/css/login.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="containerPai">
@@ -14,11 +16,25 @@
                 <div class="formLogin">
                     <h2>Fazer Login</h2>
                     <form>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="password" name="senha" placeholder="Senha" required>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="senha" placeholder="Senha" required>
+                        </div>
                         <button type="submit">Entrar</button>
                     </form>
+
+                    <div class="social-login">
+                        <p>Ou entre com:</p>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div><!-- /.formLogin -->
+
                 <div class="facaLogin">
                     <h2>Já tem <br>uma conta?</h2>
                     <p>Faça login com suas informações pessoais.</p>
@@ -30,12 +46,33 @@
                 <div class="formCadastro">
                    <h2>Cadastro</h2>
                      <form>
-                          <input type="text" name="nome" placeholder="Nome" required>
-                          <input type="email" name="email" placeholder="E-mail" required>
-                          <input type="password" name="senha" placeholder="Senha" required>
-                          <input type="password" name="senha" placeholder="Confirmar Senha" required>
-                          <button type="submit">Cadastrar</button>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="senha" placeholder="Senha" required>
+                        </div>
+                        <div class="input-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="senha" placeholder="Confirmar Senha" required>
+                        </div>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+
+                    <div class="social-login">
+                        <p>Ou cadastre-se com:</p>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div><!-- /.formCadastro -->
+
                 <div class="facaCadastro">
                     <h2>Não tem <br>uma conta?</h2>
                     <p>Crie uma conta com seu e-mail</p>

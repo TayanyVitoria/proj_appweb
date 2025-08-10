@@ -50,6 +50,71 @@ input{
     outline: none;
     background-color: #f2f3f3; 
 }
+/* Ícones dentro dos inputs */
+.input-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+}
+
+.input-icon input {
+    padding-left: 35px; /* espaço para o ícone */
+}
+
+/* === icones redes sociais === */
+.social-login a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  text-decoration: none;        /* tira sublinhado */
+  color: inherit;
+  font-size: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/* acessibilidade: foco visível */
+.social-login a:focus {
+  box-shadow: 0 0 0 4px rgba(66,133,244,0.12);
+}
+
+/* cores iniciais dos ícones (antes do hover) */
+.social-login a:nth-of-type(1) i { color: #6d6d6dff; } /* Google */
+.social-login a:nth-of-type(2) i { color: #1877F2; } /* Facebook */
+.social-login a:nth-of-type(3) i { color: #111111; } /* GitHub */
+
+/* hover: fundo com a cor da marca e ícone branco */
+.social-login a:nth-of-type(1):hover { background: #f4ca42ff; }
+.social-login a:nth-of-type(2):hover { background: #1877F2; }
+.social-login a:nth-of-type(3):hover { background: #111111; }
+
+.social-login a:hover i,
+.social-login a:focus i {
+  color: #ffffff;
+  transform: scale(1.06);
+}
+
+/* micro-efeito de elevação */
+.social-login a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.12);
+}
 
 button {
     margin-top: 8px;
