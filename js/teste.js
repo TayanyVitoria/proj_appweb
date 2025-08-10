@@ -48,3 +48,5 @@ function piscarBotoesComecar() {
 }
 
 window.addEventListener('DOMContentLoaded', piscarBotoesComecar);
+
+console.log("teste.js carregado com sucesso!");

@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+   color: #000;
+}
+
+
+h2 {
+    font-size: 40px;
+    font-weight: 550;
+    color: #000;
+    margin-bottom: 40px;
+    text-align: center;
+    color: rgba(0 0 0 / .9);
+    
+}
+p {
+    font-size: 16px;
+    color: rgba(0 0 0 / .6);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    button{
+        background: linear-gradient(to right, #fff2b0, #f5c842, #f0b103);
+        border: none;
+        color: rgba(0 0 0 / .7);
+    }
+
+}
+input{
+    width: 400px; 
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 12 20px;
+    color: #000;
+    outline: none;
+    background-color: #f2f3f3; 
+}
+
+button {
+    margin-top: 8px;
+    width: 400px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: rgba(0 0 0 / .7);
+    border: none;
+    background-color:transparent;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    transition: all .3s;
+}
+
+button:hover {
+   transform:translateY(-2px);
+}
+
+button.laranja:hover {
+    background-color: #d3540069;
+    color: #fff;
+    transition: background-color 0.5s ease;
+    
+}
+
+.containerPai {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFAF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 85%;
+    height: 95vh;
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 32px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.esquerda, .direita {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.formLogin, .facaLogin, .formCadastro, .facaCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.facaLogin, .facaCadastro{
+    position: absolute;
+    
+    h2, p{
+        color:#fff;
+    }
+
+    button {
+        background-color: rgba(255, 255, 255, 0.3);
+        
+    }
+      
+}
+
+/* Estilos para alternar entre login e cadastro */
+
+/* background movel*/
+.card::after{
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../img/fundo-laranja.webp');
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+}
+/* ===== LOGIN ATIVO ===== */
+.card.loginActive .facaLogin {
+    /* Some a mensagem "faça login" */
+    opacity: 0;
+    pointer-events: none; /* impede clique */
+}
+
+.card.loginActive .facaCadastro {
+    /* move para posição inicial */
+    transform: translateX(0);
+    transition: all 0.3s 0.3s;
+    opacity: 1; /* torna visível */
+}
+
+.card.loginActive .formLogin {
+   transition: all 0.3s 0.3s;
+   opacity: 1; /* torna visível */
+}
+
+.card.loginActive .formCadastro {
+    /* Esconde o formulário de cadastro */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.loginActive::after {
+    /* Move o elemento decorativo da direita para o meio */
+    transform: translateX(50%);
+}
+
+/* ===== CADASTRO ATIVO ===== */
+.card.cadastroActive .facaCadastro {
+    /* Some a mensagem "faça cadastro" */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.cadastroActive .formLogin {
+    /* Esconde o formulário de login */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card.cadastroActive::after {
+    /* Move o elemento decorativo da esquerda para o meio */
+    transform: translateX(-50%);
+}
+
+.card.cadastroActive .facaLogin {
+    /* move para posição inicial */
+    transform: translateX(0);
+    transition: all 0.3s 0.3s;
+    opacity: 1; /* torna visível */
+}
+.card.cadastroActive .formCadastro {
+    /* Mostra o formulário de cadastro */
+    opacity: 1; /* torna visível */
+    transition: all 0.3s 0.3s;
+}
+
+
+
+
+/* ===== TRANSIÇÕES ===== */
+.card::after {
+    /* Transição suave para o elemento decorativo */
+    transition: all 0.5s ease;
+}
+
+
+.facaCadastro {
+    /* Posição inicial fora da tela para animação */
+    transition: all 0.5s 0;
+    transform: translateX(200%);
+    opacity: 0;
+
+}
+
+.formLogin{
+    /* Esconde o formulário de login inicialmente */
+    opacity: 0;
+    transition: all 0.3s 0;
+
+}
+
+.facaLogin {
+    /* Posição inicial fora da tela para animação */
+    transition: all 0.5s 0;
+    transform: translateX(-200%);
+    opacity: 0;
+
+}
+
+.formCadastro{
+    /* Esconde o formulário de login inicialmente */
+    opacity: 0;
+    transition: all 0.3s 0;
+
+}
