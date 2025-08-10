@@ -139,21 +139,18 @@ section.slider {
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
+
 }
 
 .buttons .btn.primary {
   background-color: #FFA726;
   color: #fff;
+
 }
 
 .buttons .btn.primary:hover {
   background-color: #D35400;
   color: #fff;
-}
-
-.buttons .btn.secondary {
-  background-color: #fff;
-  color: #FFA726;
 }
 
 /* BOLINHAS DO CARROSSEL */
