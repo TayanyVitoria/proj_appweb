@@ -15,7 +15,7 @@
             <div class="esquerda">
                 <div class="formLogin">
                     <h2>Fazer Login</h2>
-                    <form>
+                    <form action="/proj_appweb/back/login.php" method="POST">
                         <div class="input-icon">
                             <i class="fa-solid fa-envelope"></i>
                             <input type="email" name="email" placeholder="Email" required>
@@ -45,7 +45,7 @@
             <div class="direita">
                 <div class="formCadastro">
                    <h2>Cadastro</h2>
-                     <form>
+                     <form action="/proj_appweb/back/cadastrar.php" method="POST">
                         <div class="input-icon">
                             <i class="fa-solid fa-user"></i>
                             <input type="text" name="nome" placeholder="Nome" required>
@@ -56,12 +56,21 @@
                         </div>
                         <div class="input-icon">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="senha" placeholder="Senha" required>
+                            <input type="password" name="senha" placeholder="Senha" id="senha" required>
                         </div>
                         <div class="input-icon">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="senha" placeholder="Confirmar Senha" required>
+                            <input type="password" name="confirmar_senha" placeholder="Confirmar Senha" id="confirmar_senha" required>
                         </div>
+
+                        <!--Validação de senhas-->
+                        <div id="password-requirements" style="display:none;" aria-live="polite">
+                            <p id="req-length" class="req-item"><i class="fa-solid fa-xmark req-icon"></i> Mínimo 8 caracteres</p>
+                            <p id="req-upper" class="req-item"><i class="fa-solid fa-xmark req-icon"></i> Pelo menos 1 letra maiúscula</p>
+                            <p id="req-number" class="req-item"><i class="fa-solid fa-xmark req-icon"></i> Pelo menos 1 número</p>
+                            <p id="req-special" class="req-item"><i class="fa-solid fa-xmark req-icon"></i> Pelo menos 1 caractere especial (!@#$...)</p>
+                            <p id="req-match" class="req-item"><i class="fa-solid fa-xmark req-icon"></i> As senhas coincidem</p>
+                          </div>
                         <button type="submit">Cadastrar</button>
                     </form>
 

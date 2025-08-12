@@ -311,3 +311,36 @@ button.laranja:hover {
     transition: all 0.3s 0;
 
 }
+
+
+
+
+
+
+/* Caixa dos requisitos de senha */
+#password-requirements {
+    font-size: 14px;
+    margin-top: 8px;
+    max-width: 320px;
+  }
+  
+  /* Requisito não cumprido */
+  .req-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+    color: #e74c3c;
+  }
+  
+  /* Requisito cumprido (fica invisível) */
+  .req-item.ok {
+    display: none;
+  }
+  
+  /* Ícone do requisito */
+  .req-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
