@@ -1,0 +1,56 @@
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/proj_appweb/css/calculadora.css"/>
+    
+</head>
+<body>
+    <div class="calculadora-wrapper">
+        <div class="calculadora-container">
+            <h2>Calcule seus Investimentos</h2>
+
+            <form id="calcForm">
+                <label for="valorInicial">Valor Inicial (R$):</label>
+                <input type="number" id="valorInicial" name="valorInicial" required>
+
+                <label for="valorMensal">Valor Mensal</label>
+                <input type="number" id="valorMensal" name="valorMensal" required>
+                
+                <label for="tipo">Tipo de investimento:</label>
+                <select id="tipo" name="tipo">
+                    <option value=""></option>
+                    <option value="poupanca">Poupança (0,5% a.m.)</option>
+                    <option value="cdb">CDB (1% a.m.)</option>
+                    <option value="tesouro">Tesouro Direto (0,8% a.m.)</option>
+                    <option value="nubank">Caixinha Nubank (0,65% a.m.)</option>
+                    <option value="inter">Caixinha Inter (0,7% a.m.)</option>
+                    <option value="lci">LCI (0,75% a.m.)</option>
+                    <option value="lca">LCA (0,8% a.m.)</option>
+                    <option value="rendaVariavel">Renda Variável (1,5% a.m.)</option>
+                    <option value="rendaFixa">Renda Fixa (1% a.m.)</option>
+
+                </select>
+                <label for="tempo">Tempo:</label>
+                    <input type="number" id="tempo" name="tempo" min="1" required>
+                    <select id="unidadeTempo" name="unidadeTempo">
+                    <option value="meses">Meses</option>
+                    <option value="anos">Anos</option>
+                    </select>
+
+                <button type="submit">Calcular</button>
+            </form>
+
+
+            <div id="resultado" class="resultado"></div>
+        </div>
+
+        <!-- Gráfico + Tabela -->
+        <div class="resultado-container">
+            <canvas id="graficoInvestimento"></canvas>
+            <div id="tabelaResultado"></div>
+        </div>
+    </div>
+    <!-- Importar Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../js/calculadora.js"></script>
+</body>
+</html>

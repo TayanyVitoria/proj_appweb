@@ -1,0 +1,172 @@
+/* Fonte padrão */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout geral lado a lado */
+.layout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 50px auto;
+  gap: 30px;
+}
+
+/* Calculadora do lado esquerdo */
+.calculadora-container {
+  flex: 1;
+  max-width: 500px !important;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.calculadora-container:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.30);
+}
+
+.calculadora-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFA726; 
+  margin-bottom: 25px;
+}
+
+
+/* Formulário */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: rgba(0 0 0 / .7);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #f0b103;
+  outline: none;
+}
+
+option:hover {
+  background-color: orange; /* muda a cor do hover */
+  color: white;
+}
+
+
+/* Botão */
+button {
+  background: linear-gradient(to right, #fff2b0, #f5c842, #f0b103);
+  border: none;
+  color: rgba(0 0 0 / .7);
+  width: 100%;
+  padding: 14px;
+  margin-top: 25px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background: rgba(255, 213, 79, 0.5);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transform:translateY(-2px);
+}
+
+/* Resultado em texto */
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background: #eef6f9;
+  border-left: 5px solid #f0b103;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: rgba(0 0 0 / .7);
+  display: block; 
+}
+
+/* Estilo da tabela */
+#tabelaResultado {
+  margin-top: 25px;
+}
+
+#tabelaResultado table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+#tabelaResultado th,
+#tabelaResultado td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  color:rgba(0 0 0 / .7);
+}
+
+#tabelaResultado th {
+  background: #f2f2f2;
+  font-weight: 600;
+}
+
+.calculadora-wrapper {
+  display: flex;
+  gap: 20px; /* espaçamento entre calculadora e resultado */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: flex-start; /* alinha ao topo */
+  margin: 20px;
+}
+
+.calculadora-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+
+.resultado-container {
+  flex: 1; /* ocupa o restante do espaço */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#graficoInvestimento {
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  margin-left: 100px;
+}
+
+#tabelaResultado table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabelaResultado th, #tabelaResultado td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
