@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário Financeiro</title>
+    <link rel="stylesheet" href="../css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <div class="header-left"><div class="logo">Planify</div></div>
+
+    <nav class="nav-center">
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="calculadora.html" class="nav-link">Calcular Inverstimentos</a>
+      <a href="diario.html" class="nav-link">Diário</a>
+      <a href="metas.html" class="nav-link">Metas</a>
+      <a href="relatorios.html" class="nav-link">Relatórios</a>
+      <a href="analises.html" class="nav-link">Análises</a>
+      <a href="perfil.html" class="nav-link">Perfil</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="user-box">
+        <div id="userAvatar" class="user-avatar">U</div>
+        <div class="user-info">
+          <span id="userName" class="user-name"></span>
+          <span id="userEmail" class="user-email"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main class="main">
+
+
+ <div class="diario-container">
+    <h2>Diário Financeiro</h2>
+
+    <form id="formTransacao" class="form-diario">
+
+        <div class="campo">
+            <label for="tipo">Tipo</label>
+            <select id="tipo">
+                <option value="Entrada">Entrada</option>
+                <option value="Saída">Saída</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="valor">Valor</label>
+            <input type="number" id="valor" placeholder="Ex: 150.00">
+        </div>
+
+        <div class="campo">
+            <label for="data">Data</label>
+            <input type="date" id="data">
+        </div>
+
+        <div class="campo descricao">
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" placeholder="Ex: Salário, Uber, Mercado…">
+        </div>
+
+        <button class="btn-salvar" type="submit">Salvar Transação</button>
+
+    </form>
+
+    <p id="mensagem"></p>
+</div>
+
+
+</main>
+<script type="module" src="/js/diario.js"></script>
+<script type="module" src="/js/firebase-config.js"></script>
+
+</body>
+</html>

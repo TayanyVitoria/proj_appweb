@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meu Perfil</title>
+  <!-- usa o mesmo CSS que você já usa -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- HEADER (sua classe .header já existe no CSS) -->
+  <header class="header">
+    <h2 class="logo">Planify</h2>
+
+    <nav class="nav-center">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="calculadora.html" class="nav-link">Calcular Inverstimentos</a>
+      <a href="diario.html" class="nav-link">Diário</a>
+      <a href="metas.html" class="nav-link">Metas</a>
+      <a href="relatorios.html" class="nav-link">Relatórios</a>
+      <a href="analises.html" class="nav-link">Análises</a>
+      <a href="perfil.html" class="nav-link active">Perfil</a>
+    </nav>
+
+    <!-- Mantive a estrutura / classes do seu projeto -->
+    <div class="user-box">
+      <div class="user-avatar">U</div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <section class="container" style="margin-top: 40px;">
+    <div class="profile-box">
+
+      <!-- avatar: mantive a sua classe existente -->
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+        class="user-avatar-large"
+        alt="Foto do usuário">
+
+      <h1 class="profile-title">Meu Perfil</h1>
+
+      <div class="profile-info">
+        <p><strong>Nome:</strong> <span id="perfilNome">Carregando...</span></p>
+        <p><strong>E-mail:</strong> <span id="perfilEmail">Carregando...</span></p>
+        <p><strong>ID do Usuário:</strong> <span id="perfilID">Carregando...</span></p>
+      </div>
+
+      <!-- IMPORTANTE: id do botão é "logout" — mesmo id que seu script de login usa -->
+      <button id="logout" class="btn-logout">Sair da Conta</button>
+
+    </div>
+  </section>
+
+  <!-- script do perfil (módulo ES). Coloque esse arquivo em /js/perfil.js -->
+  <script type="module" src="/js/perfil.js"></script>
+  <script type="module" src="/js/firebase-config.js"></script>
+ 
+</body>
+</html>

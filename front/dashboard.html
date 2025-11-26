@@ -1,0 +1,67 @@
+
+<!--Dashboard.html-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard • Planify</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left"><div class="logo">Planify</div></div>
+
+    <nav class="nav-center">
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="calculadora.html" class="nav-link">Calcular Inverstimentos</a>
+      <a href="diario.html" class="nav-link">Diário</a>
+      <a href="metas.html" class="nav-link">Metas</a>
+      <a href="relatorios.html" class="nav-link">Relatórios</a>
+      <a href="analises.html" class="nav-link">Análises</a>
+      <a href="perfil.html" class="nav-link">Perfil</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="user-box">
+        <div id="userAvatar" class="user-avatar">U</div>
+        <div class="user-info">
+          <span id="userName" class="user-name"></span>
+          <span id="userEmail" class="user-email"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div id="noDataAlert" class="alert" style="display:none;text-align:center;background:#fff3cd;padding:14px;border-radius:12px;margin-bottom:20px;color:#856404;font-weight:500;">
+      Nenhum dado encontrado. Adicione suas entradas e despesas no Diário para visualizar o Fluxo de Caixa.
+    </div>
+
+    <section class="welcome-section">
+      <h1 id="welcomeMessage">Bem-vindo ao Dashboard</h1>
+      <p>Gerencie suas finanças com inteligência</p>
+    </section>
+
+    <section class="cards-grid">
+      <div class="card income"><h3>Receitas no mês</h3><p id="cardIncome">R$ 0</p></div>
+      <div class="card expense"><h3>Despesas no mês</h3><p id="cardExpense">R$ 0</p></div>
+      <div class="card gold"><h3>Patrimônio Total</h3><p>R$ <span id="totalWealth">0</span></p></div>
+    </section>
+
+    <section class="chart-section">
+  <h2>Fluxo de Caixa • Últimos 12 meses</h2>
+  <div style="width: 650px; height: 300px; margin: 0 auto;">
+      <canvas id="cashFlowChart"></canvas>
+  </div>
+</section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="../js/dashboard.js"></script>
+  <script type="module" src="/js/firebase-config.js"></script>
+</body>
+</html>

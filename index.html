@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planify</title>
+  <link rel="stylesheet" href="/css/estilo.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- Início do cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Planify Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#ferramentas">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Fim do cabeçalho -->
+
+  <!-- Início da seção do carrossel -->
+  <section class="slider" id="home">
+    <div class="slider-content">
+      
+    <!-- Inputs para navegação manual -->
+    <input type="radio" name="btn-radio" id="radio1">
+    <input type="radio" name="btn-radio" id="radio2">
+    <input type="radio" name="btn-radio" id="radio3">
+
+
+      <!-- Slide 1 -->
+      <div class="slide-box primeiro">
+        <img src="img/slide1.png" alt="slide 1" class="img-slide1">
+        
+        <div class="out-text">
+          <h1><span>Planeje com clareza,</span><br><span>cresça com segurança</span></h1>
+          <p>Organize suas finanças com praticidade, inteligência e controle total.</p>
+          <div class="buttons">
+            <a href="/front/login.html" class="btn primary">Entrar</a>
+          
+          </div>
+        </div>
+      </div>
+      <!-- Fim do Slide 1 -->
+
+      <!-- Slide 2 -->
+      <div class="slide-box">
+        <img src="img/slide3.png" alt="slide 3" class="img-slide">
+        
+        <div class="out-text">
+          <h1><span>Seu dinheiro sob controle,</span><br><span>sua vida nos trilhos</span></h1>
+          <p>Assuma o controle do seu dinheiro e conquiste mais liberdade no seu dia a dia.</p>
+          <div class="buttons">
+            <a href="/front/login.html" class="btn primary">Entrar</a>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Fim do Slide 2 -->
+
+      <!-- Slide 3 -->
+      <div class="slide-box">
+        <img src="img/slide2.png" alt="slide 2" class="img-slide2">
+        
+        <div class="out-text">
+          <h1><span>Pequenos valores,</span><br><span>grandes resultados</span></h1>
+          <p>Com a gestão financeira certa, seus objetivos deixam de ser sonhos distantes e se tornam planos reais</p>
+          <div class="buttons">
+            <a href="/front/login.html" class="btn primary">Entrar</a>
+          
+          </div>
+        </div>
+      </div>
+      <!-- Fim do Slide 3 -->
+
+      <!-- Botões automáticos de navegação -->
+      <div class="nav-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+      <!-- Fim dos botões automáticos -->
+
+      <!-- Botões manuais de navegação -->
+      <div class="nav-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+      <!-- Fim dos botões manuais -->
+
+    </div> <!-- Fim da .slider-content -->
+  </section>
+  <!-- Fim da seção do carrossel -->
+
+
+
+  <!--Seção Nossas Ferramentas-->
+
+<section class="nossas-ferramentas" id="ferramentas">
+  <h2>Nossas Ferramentas</h2>
+  <p>Descubra como nossas ferramentas podem transformar sua gestão financeira</p>
+
+  <div class="container">
+    <div class="cards">
+
+      <div class="card blue">
+        <i class="bx bx-clipboard-detail bx-flashing" style="color:#ffffff"></i>
+        <h3>Relatórios</h3>
+        <p>Acompanhe suas métricas em tempo real com precisão e clareza.</p>
+      </div>
+
+      <div class="card orange">
+        <i class="bx bx-wallet-alt" style="color:#ffffff"></i>
+        <h3>Financeiro</h3>
+        <p>Controle seu orçamento e despesas com eficiência.</p>
+      </div>
+
+      <div class="card blue">
+        <i class="bx bx-dashboard-alt" style="color:#ffffff"></i>
+        <h3>Dashboard</h3>
+        <p>Visualize análises e relatórios inteligentes para decisões mais eficazes.</p>
+      </div>
+
+      <div class="card orange">
+        <i class="bx bx-bullseye" style="color:#ffffff"></i>
+        <h3>Objetivos</h3>
+        <p>Defina suas metas financeiras e acompanhe seu progresso.</p>
+      </div>
+
+      <div class="card blue">
+        <i class="bx bx-bitcoin" style="color:#ffffff"></i>
+        <h3>Investimento</h3>
+        <p>Saiba como e onde investir o seu dinheiro de forma segura.</p>
+      </div>
+
+      <div class="card orange">
+        <i class="bx bx-cog" style="color:#ffffff"></i>
+        <h3>Configurações</h3>
+        <p>Personalize sua experiência conforme sua necessidade.</p>
+      </div>
+    
+    </div><!--Fim cards-->
+  </div><!--Fim container-->
+    <div class="wrap">
+      <button class="button" onclick="location.href='#planos'">Nossos Planos</button>
+    </div>  
+
+  
+
+</section><!--Fim Seção Nossas Ferramentas-->
+
+
+  <!--Seção Sobre a Empresa-->
+<section class="sobre-empresa" id="sobre">
+  <h2>Sobre a Empresa</h2>
+  <div class="container">
+    <div class="empresa-img">
+      <img src="img/sobre-empresa.png" alt="Sobre a Empresa" >
+    </div><!--Fim empresa-img-->
+    <div class="empresa-txt">
+      <p>A Planify é uma empresa dedicada a transformar ideias em estratégias eficazes. Atuamos com inteligência, organização e foco em resultados para ajudar nossos clientes a planejarem, desenvolverem e otimizarem seus projetos com excelência. Acreditamos que cada passo precisa ser pensado, cada decisão fundamentada e cada ação executada com propósito. Com uma equipe qualificada e apaixonada por inovação, entregamos soluções que conectam planejamento e performance.</p>
+      <img src="img/funcionarios.png" alt="funcionarios" class="empresa-funcionarios">
+      <h4>Mais de 45 funcionarios <br> especializados</h4>
+      <p>Trabalhamos com supote 24 horaS.</p>
+    </div><!--Fim empresa-txt-->
+  </div><!--Fim container-->
+</section><!--Fim Seção Sobre a Empresa-->
+
+<!--Seção nossos-planos-->
+<section class="nossos-planos" id="planos">
+  <h2>Escolha o Plano Ideal</h2>
+
+  <div class="cards-container">
+    <!-- BASIC -->
+    <div class="preco-card" onclick="selecionarPlano(this)">
+      <h3>Basic</h3>
+      <p class="preco"><span class="risco">R$20</span> R$17,99 <span>/mês</span></p>
+      <ul class="recursos">
+        <li>✔️ Financeiro Web e Mobile</li>
+        <li>✔️ 150 Lançamentos / mês</li>
+        <li>✔️ 100 Anexos</li>
+        <li>✔️ Relatórios</li>
+        <li>✔️ Categorias</li>
+        <li>✔️ Contas</li>
+        <li>❌ Fluxo de Caixa</li>
+        <li>❌ Cartão de Crédito</li>
+        <li>✔️ 750 Fornecedores</li>
+        <li>✔️ 1 Usuário</li>
+        <li>✔️ 2 Empresas</li>
+      </ul>
+      <button class="btn-comecar" onclick="iniciarPlano(event, 'Basic')">Começar</button>
+    </div>
+
+    <!-- PLUS -->
+    <div class="preco-card" onclick="selecionarPlano(this)">
+      <h3>Plus</h3>
+      <p class="preco"><span class="risco">R$40</span> R$34,99 <span>/mês</span></p>
+      <ul class="recursos">
+        <li>✔️ Financeiro Web e Mobile</li>
+        <li>✔️ 300 Lançamentos / mês</li>
+        <li>✔️ 200 Anexos</li>
+        <li>✔️ Relatórios</li>
+        <li>✔️ Categorias</li>
+        <li>✔️ Contas</li>
+        <li>✔️ Fluxo de Caixa</li>
+        <li>❌ Cartão de Crédito</li>
+        <li>✔️ 1250 Fornecedores</li>
+        <li>✔️ 2 Usuários</li>
+        <li>✔️ 2 Empresas</li>
+      </ul>
+      <button class="btn-comecar" onclick="iniciarPlano(event, 'Plus')">Começar</button>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="preco-card popular" onclick="selecionarPlano(this)">
+      <div class="etiqueta">Popular</div>
+      <h3>Premium</h3>
+      <p class="preco"><span class="risco">R$60</span> R$54,99 <span>/mês</span></p>
+      <ul class="recursos">
+        <li>✔️ Financeiro Web e Mobile</li>
+        <li>✔️ 700 Lançamentos / mês</li>
+        <li>✔️ 1000 Anexos</li>
+        <li>✔️ Relatórios</li>
+        <li>✔️ Categorias</li>
+        <li>✔️ Contas</li>
+        <li>✔️ Fluxo de Caixa</li>
+        <li>✔️ Cartão de Crédito</li>
+        <li>✔️ Fornecedores ilimitados</li>
+        <li>✔️ 4 Usuários</li>
+        <li>✔️ 4 Empresas</li>
+      </ul>
+      <button class="btn-comecar" onclick="iniciarPlano(event, 'Premium')">Começar</button>
+    </div>
+  </div><!--Fim cards-container-->
+</section><!--Fim Seção nossos-planos-->
+
+  <!-- Início do rodapé -->
+   <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>Planify</h3>
+      <p>Simplificamos processos. Conectamos soluções. Transformamos sua gestão.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#ferramentas">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contato">
+      <h4>Contato</h4>
+      <p><i class="fas fa-envelope"></i> contato@planify.com</p>
+      <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Planify. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Tayany Vitoria</p>
+  </div>
+</footer>
+
+  <!-- Link para o JavaScript -->
+  <script type="module" src="/proj_appweb/js/firebase-config.js"></script>
+  <script src="js/teste.js"></script>  
+</body>
+</html>

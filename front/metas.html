@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Metas</title>
+</head>
+
+<body>
+
+<header class="header">
+    <h2 class="logo">Planify</h2>
+
+    <nav class="nav-center">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="diario.html" class="nav-link">Diário</a>
+        <a href="metas.html" class="nav-link active">Metas</a>
+        <a href="perfil.html" class="nav-link">Perfil</a>
+    </nav>
+</header>
+
+<section class="container" style="margin-top: 40px;">
+
+    <div class="metas-header">
+        <h1 class="titulo-metas">Minhas Metas Financeiras</h1>
+        <button id="btnNovaMeta" class="btn-new-goal">+ Nova Meta</button>
+    </div>
+
+    <div id="listaMetas" class="metas-list">
+        <div id="nenhumaMeta" class="metas-empty">
+            <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" class="empty-icon">
+            <p>Nenhuma meta cadastrada ainda</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- MODAL DE NOVA META -->
+<div id="modalMeta" class="modal-overlay">
+    <div class="modal-box">
+        
+        <h2>Nova Meta</h2>
+
+        <label>Título da Meta</label>
+        <input id="metaTitulo" type="text" placeholder="Ex: Viagem para Europa">
+
+        <label>Categoria</label>
+        <select id="metaCategoria">
+            <option value="Viagem">✈️ Viagem</option>
+            <option value="Casa">🏡 Casa</option>
+            <option value="Carro">🚗 Carro</option>
+            <option value="Estudos">📚 Estudos</option>
+            <option value="Mateial">💸 Material</option>
+        </select>
+
+        <div class="flex-row">
+            <div>
+                <label>Valor Meta (R$)</label>
+                <input id="metaValor" type="number" placeholder="10000">
+            </div>
+            <div>
+                <label>Valor Atual (R$)</label>
+                <input id="metaAtual" type="number" value="0">
+            </div>
+        </div>
+
+        <label>Prazo</label>
+        <input id="metaPrazo" type="date">
+
+        <div class="modal-buttons">
+            <button id="btnCancelar" class="btn-cancel">Cancelar</button>
+            <button id="btnSalvarMeta" class="btn-save">Salvar Meta</button>
+        </div>
+
+    </div>
+</div>
+<!-- MODAL DE ATUALIZAR META -->
+<div id="modalAtualizar" class="modal-overlay">
+    <div class="modal-box">
+        <h2>Atualizar Progresso</h2>
+
+        <label>Valor para adicionar (R$):</label>
+        <input id="valorAdicionar" type="number" placeholder="Ex: 150">
+
+        <div class="modal-buttons">
+            <button id="btnCancelarAtualizar" class="btn-cancel">Cancelar</button>
+            <button id="btnConfirmarAtualizar" class="btn-save">Atualizar</button>
+        </div>
+    </div>
+</div>
+<!-- IMPORTAÇÃO CORRETA AQUI -->
+<script type="module" src="/js/metas.js"></script>
+
+</body>
+</html>
